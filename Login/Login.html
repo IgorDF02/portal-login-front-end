@@ -1,0 +1,29 @@
+<!--
+Dessenvolvedor: Igor Dias Fernandes
+Data de criação: 18/07/2022 - 11:57    
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Login.css"> <!-- função que conecta o CSS ao HTML -->
+        <title>Login</title>
+
+    </html>
+
+<body>
+    <header><strong>Logar no site</strong></header> <!-- Cabeçalho -->
+    <section> <!--Seção específica que terá alterações -->
+        <form method="post" action="Login.php"> <!--Função que conecta o PHP ao HTML -->
+        <p><input type="text" class="usuario" name="texto" placeholder="&#x1F464; Nome do usuário" required></p> <!--Caixa de texto para inserir nomeclatura -->
+        <p><input type="password" class="senha" name="senha" placeholder="&#x1F512; Senha" required></p> <!--Caixa de texto para inserir senha -->
+        <p><button type="submit" class="button" onclick="login();">Login</button></p> <!-- Botão que executará sua função através do Javascript -->
+        <!--<input type="checkbox" checked="checado" name="lembre">Lembre-me //Função usada em caso de necessidade de lembrar o usuário cadastrado -->
+        </form>
+    </section>
+    
+        <script src="Login.js"></script> <!--Função que conecta o Javascript ao HTML-->
+    </body>
+    <footer>&copy;Prefeitura municipal de Ananindeua</footer> <!--Nota de rodapé-->
+</html>

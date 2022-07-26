@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(18, 187, 238); /*Cor de fundo do site*/
+    margin: 0; /*Cria uma margem no site, se o valor for diferente de 0*/
+}
+
+section{
+    background-color: white; /*cor de fundo da seção utilizada*/
+    border-radius: 5%; /*Formato da borda da seção*/
+    text-align: center; /*Alinha o texto ao centro da seção*/
+    height: 200px; /*Altura da caixa da seção*/
+    width: 300px; /*Largura da caixa da seção*/
+    margin: auto;
+    padding: 20px; 
+    margin-top: 6%;
+}
+
+header{
+    background-color: white; /*Cor de fundo do cabeçalho*/
+    text-align: center; 
+    font: normal 30pt Arial; /**/
+    padding: 20px;  /*Aumenta o espaçamento da seção do cabeçalho*/
+}
+
+footer{
+    color: white;
+    text-align: center;
+    padding-top: 16%; /*Distância do rodapé pro body do site*/
+}
+
+
+input{
+    width: 95%; /*Tamanho da caixa do input*/
+}
+
+.button{ /*Usa-se o ponto antes da função se for chamar por class*/
+    position: relative;
+    background: #ca3c11; /*Cor de fundo do botão*/
+    color: white; /*Cor da fonte do botão*/
+    font-size: 18px; /*Tamanho da fonte*/
+    height: 60px; /*Altura do botão*/
+    width: 90px; /*Largura do botão*/
+    border-radius: 1em;
+    margin-top: 1em;
+    padding: 0.8em; 
+    cursor: pointer; /*Ao posicionar o mouse no botão, a seta muda de forma*/
+    transition-duration: 0.4s;
+}
+
+.button:hover{ /*O que vai aconetecer com o botão ao posicioná-lo para o click*/
+    transition-duration: 0.5s; /*tempo de transição*/
+    background-color: #258ab9; /*cor de fundo*/
+}
+
+.button:after{ /*O que vai aconetecer ao botão após o click*/
+    content: ""; /*É o que dá efeito ao redor do botão*/
+    display: block;
+    position: absolute;
+    border-radius: 4em; /*Tamanho da borda*/
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s;
+    box-shadow: 0 0 10px 40px white;
+}
+
+.button:active::after{
+    box-shadow: 0 0 0 0 #258ab9;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.button:active {
+    top: 1px;
+}
